@@ -47,7 +47,7 @@ If you cannot point to specific URLs supporting your label, use "Insufficient Ev
 
 
 def _get_structured_llm(schema):
-    llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
+    llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
     return llm.with_structured_output(schema)
 
 
